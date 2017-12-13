@@ -1,6 +1,4 @@
 import axios from 'axios';
-//import propertySerializer from '../serializers/property';
-//import reviewSerializer from '../serializers/review';
 
 class bookingService {
 
