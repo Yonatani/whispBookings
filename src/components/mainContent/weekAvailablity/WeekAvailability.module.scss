@@ -1,0 +1,14 @@
+@import '../../../styles/vars';
+
+.weekAvailabilityContainer{
+    width: 130px;
+    height: 130px;
+    border: solid 3px #ffbe57;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #ffbe57;
+}
+

@@ -1,0 +1,36 @@
+@import '../../../styles/vars';
+
+.arrivedContainer{
+    display: flex;
+    flex-direction: column;
+}
+.clientRowContainer {
+    height: 40px;
+    border-top: solid 1px #29353e;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    td {
+        box-sizing: border-box;
+        flex-grow: 1;
+        width: 100%;  // Default to full width
+        overflow: hidden; // Or flex might break
+        list-style: none;
+        flex-direction: row;
+        display: flex;
+        .greenCircle {
+            background-color: #25cd6b;
+            width: 7.5px;
+            height: 7.5px;
+            border-radius: 4px;
+            align-self: center;
+            margin-right: 12.5px;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+
+}

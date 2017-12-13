@@ -1,0 +1,68 @@
+@import '../../../styles/vars';
+
+.recentActivityContainer {
+    border-bottom: solid 1px #374148;
+    padding-bottom: 30px;
+    .activityContainer {
+        display: flex;
+        flex-direction: row;
+        .activityContent {
+            margin-bottom: 20px;
+            width: 65%;
+            .activityHeader {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .status {
+                    color: white;
+                    font-size: 14px;
+                    text-align: left;
+                    margin: 0px;
+                }
+                .timeContainer {
+                    width: 60px;
+                    height: 20px;
+                    border-radius: 10px;
+                    background-color: #28353d;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                }
+                .time {
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: #72848b;
+                    margin: 0px;
+                }
+            }
+
+            .description {
+                font-size: 12px;
+                margin-top: 4px;
+                margin-bottom: 0px;
+            }
+
+
+        }
+        .rightDivider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px;
+            margin-top: 4px;
+            .line {
+                width: 1px;
+                height: 100%;
+                background-color: #27323a;
+            }
+            .circle {
+                width: 5px;
+                height:5px;
+                border-radius: 50%;
+            }
+        }
+
+    }
+
+}

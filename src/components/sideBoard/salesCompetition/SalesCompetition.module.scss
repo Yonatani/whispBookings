@@ -1,0 +1,50 @@
+@import '../../../styles/vars';
+
+.employeeStatisticsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    margin-bottom: 15px;
+    img {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+    }
+    .contentContainer{
+        flex-grow: 1;
+        margin-left: 12px;
+        .statisticHeader{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: flex-start;
+            p {
+                margin: 0;
+                font-size: 12px;
+            }
+            .name {
+                color: white;
+            }
+        }
+        .statisticGauge {
+            background-color: #323d45;
+        }
+        .timeContainer {
+            width: 60px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #28353d;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .time {
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+            color: #72848b;
+            margin: 0px;
+        }
+    }
+
+}

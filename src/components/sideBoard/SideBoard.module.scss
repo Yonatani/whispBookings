@@ -1,0 +1,14 @@
+@import '../../styles/vars';
+
+.sideBoardContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    h3 {
+        color: white;
+        align-self: flex-start;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+}

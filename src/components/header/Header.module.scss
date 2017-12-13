@@ -1,0 +1,22 @@
+@import '../../styles/vars';
+
+.headerContainer {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-dark-light;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    p {
+        margin-left: 80px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 70px;
+        border-radius: 25px;
+    }
+}
