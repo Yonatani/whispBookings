@@ -2,8 +2,6 @@ import bookingsService from '../services/bookingService';
 import { getNumberOfDays } from '../utils/utils'
 import _ from 'lodash';
 export const UPDATE_BOOKINGS = 'UPDATE_BOOKINGS';
-export const UPDATE_BOOKINGS_SNAPSHOT = 'UPDATE_BOOKINGS_SNAPSHOT';
-export const UPDATE_RECENT_ACTIVITY = 'UPDATE_RECENT_ACTIVITY';
 export const UPDATE_BEST_SELLERS = 'UPDATE_BEST_SELLERS';
 export const IS_LOADING_BOOKINGS = 'IS_LOADING_BOOKINGS';
 
@@ -53,38 +51,6 @@ function updateBestThreeSellers(bestThreeSellers) {
     return {
         type: UPDATE_BEST_SELLERS,
         bestThreeSellers,
-    };
-}
-
-export function getBookingsSnapshot() {
-    return (dispatch) => {
-        bookingsService.getBookingsSnapshot().then((data) => {
-            dispatch(updateBookingsSnapshot(data));
-        });
-
-    };
-}
-
-function updateBookingsSnapshot(snapshots) {
-    return {
-        type: UPDATE_BOOKINGS_SNAPSHOT,
-        snapshots,
-    };
-}
-
-export function getRecentActivity() {
-    return (dispatch) => {
-        bookingsService.getRecentActivity().then((data) => {
-            dispatch(updateRecentActivity(data));
-        });
-
-    };
-}
-
-function updateRecentActivity(recentActivity) {
-    return {
-        type: UPDATE_RECENT_ACTIVITY,
-        recentActivity,
     };
 }
 
